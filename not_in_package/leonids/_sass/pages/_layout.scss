@@ -1,0 +1,45 @@
+/* LAYOUT CSS */
+.cover {
+  background-color: $background-color;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+  padding: 30px 15px 20px;
+  z-index: 1;
+  @include media-query($small-screen) {
+    background-position: center;
+    padding: 30px;
+  }
+  @include media-query($medium-screen) {
+    height: 100vh;
+    position: initial;
+    width: 100%;
+  }
+}
+.cover-card {
+  color: $text-color;
+  padding: 0 30px;
+  .author_name {
+    display: block;
+    color: #F36170;
+    font-size: 2em;
+  }
+  .author_job {
+    display: block;
+    color: $secondary;
+    font-size: 1.35em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 5px auto 10px;
+  }
+  .author_bio {
+    font-size: 1.2em;
+    display: block;
+  }
+  @include media-query($medium-screen) {
+    text-align: right;
+    margin: 0 auto;
+    padding: 0 0px 80px;
+  }
+}

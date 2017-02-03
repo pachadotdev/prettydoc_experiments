@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Syntax Highlighting
+   ========================================================================== */
+
+pre {
+    padding: 1em;
+    margin-bottom: 1.5em;
+	line-height: 1.5;
+	color: #d0d0d0;
+    color: #525252;
+	border: 1px solid darken($body-color, 5);
+	background-color: #272822;
+    background-color: #f8f8f8;
+	border-radius: 3px;
+    position: relative;
+    margin: 1em 0;
+}

@@ -1,0 +1,77 @@
+/**
+  * Global setting
+  */
+*,
+*:before,
+*:after {
+  @include box-sizing;
+}
+.notice {
+  border: 1px solid lighten($text-color, 45%);
+  border-radius: 0.4em;
+  padding: 0.5em 1em;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// Tables
+table,
+th,
+td {
+  border: none;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+}
+.table-top {
+  vertical-align: top;
+}
+.table-middle {
+  vertical-align: middle;
+}
+.table-bottom {
+  vertical-align: bottom;
+}
+table {
+  width: 100%;
+  margin: 20px auto;
+}
+th, td {
+  border-bottom: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 10px;
+}
+th {
+  background-color: #f5a623;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+// Global transition
+b,
+i,
+strong,
+em,
+blockquote,
+p,
+q,
+span,
+figure,
+img,
+h1,
+h2,
+header,
+input,
+a {
+  @include transition(all .1s ease);
+}

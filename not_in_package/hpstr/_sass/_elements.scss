@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Base Elements and Components
+   ========================================================================== */
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px auto;
+}
+
+th, td {
+  border-bottom: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #7887AB;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
