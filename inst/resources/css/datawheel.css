@@ -156,7 +156,7 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-    background-color: #666666
+    background-color: #F2F2F2
 }
 
 b,
@@ -1023,7 +1023,7 @@ pre code span {
 }
 
 .cover {
-    background-color: #666666;
+    background-color: #F2F2F2;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -1054,21 +1054,21 @@ pre code span {
 
 .cover-card .author_name {
     display: block;
-    color: #fcca65;
+    color: #cb9f2c;
     font-size: 2em;
     font-weight: 700
 }
 
 .cover-card .author_job {
     display: block;
-    color: white;
+    color: #666666;
     font-size: 1.35em;
     font-weight: 700;
     margin: 5px auto 10px
 }
 
 .cover-card .author_bio {
-    color: white;
+    color: #666666;
     font-size: 1.2em;
     display: block
 }
@@ -1082,7 +1082,7 @@ pre code span {
 }
 
 .post-listing {
-    background-color: #F2F2F2;
+    background-color: white;
     position: absolute;
     top: 400px;
     z-index: 233;

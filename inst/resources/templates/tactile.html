@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
-<link rel="icon" type="image/png" href="http://www.datawheel.us/img/favicon.ico">
 
 <head>
 
@@ -386,21 +385,17 @@ $endif$
 
 $endif$
 
-<div class="row">
-<div class="col s12 m3">
-<div class="table cover">
-<div class="cover-card table-cell table-middle">
-
-<center>
-<img src="http://pacha.datawheel.us/datawheel_labs.png" alt="datawheel_logo" width=100%><br>
+<div id="container">
+<div class="inner">
+<header>
 $if(title)$
-<span class="author_name">$title$</span>
+<h1 class="title toc-ignore">$title$</h1>
 $if(subtitle)$
-<span class="author_job">$subtitle$</span>
+<h2 class="subtitle">$subtitle$</h2>
 $endif$
 $for(author)$
 $if(author.name)$
-<span class="author_bio mbm">$author.name$</span>
+<h3 class="author">$author.name$</h3>
 $if(author.affiliation)$
 <address class="author_afil">
 $author.affiliation$<br>$endif$
@@ -409,11 +404,11 @@ $if(author.email)$
 </address>
 $endif$
 $else$
-<span class="author_bio mbm">$author$</span>
+<h3 class="author">$author$</h3>
 $endif$
 $endfor$
 $if(date)$
-<span class="author_bio mbm">$date$</span>
+<h3 class="date">$date$</h3>
 $endif$
 $if(abstract)$
 <div class="abstract">
@@ -422,17 +417,14 @@ $abstract$
 </div>
 $endif$
 $endif$
-</center>
-</div>
-</div>
-</div>
+</header>
+
+<hr>
 
 $if(theme)$
 </div>
 $endif$
 
-<div class="col s12 m9">
-<div class="post-listing">
 $if(toc_float)$
 $else$
 $if(toc)$
@@ -442,12 +434,7 @@ $toc$
 $endif$
 $endif$
 
-<div id="post">
-<article class="post-content">
 $body$
-</article>
-</div>
-</div>
 </div>
 </div>
 
@@ -485,8 +472,6 @@ $if(mathjax-url)$
   })();
 </script>
 $endif$
-
-<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
 </body>
 </html>
