@@ -1140,3 +1140,14 @@ section.post {
 #page .page-header {
     margin: 0 auto 50px
 }
+
+ul li {
+    margin-left: 1em;
+    list-style: outside disc;
+}
+
+#threecolumns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
